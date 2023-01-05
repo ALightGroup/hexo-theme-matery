@@ -40,6 +40,20 @@
                 </div>
                 <% } %>
 
+                <% if (page.author) { %>
+                    <div class="post-date info-break-policy">
+                        <i class="fa-solid fa-user-pen"></i> <%- __('作者') %>:&nbsp;&nbsp;
+                        <%- page.author %>
+                    </div>
+                <% } %>
+
+                <% if (page.revision) { %>
+                    <div class="post-date info-break-policy">
+                        <i class="fa-solid fa-user-group"></i> <%- __('审校') %>:&nbsp;&nbsp;
+                        <%- page.revision %>
+                    </div>
+                <% } %>
+
                 <% if (theme.postInfo.update) { %>
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i><%- __('updateDate') %>:&nbsp;&nbsp;
