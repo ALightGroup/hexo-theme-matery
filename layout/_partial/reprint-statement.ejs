@@ -12,9 +12,23 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.author || config.author %></a>
+                    <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.author %></a>
                 </span>
             </div>
+            
+            <% if (page.revision) { %>
+                <div class="reprint__author">
+                    <span class="reprint-meta" style="font-weight: bold;">
+                        <i class="fa-solid fa-user-group">
+                            <%= __('审校') %>:
+                        </i>
+                    </span>
+                    <span class="reprint-info">
+                        <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.revision %></a>
+                    </span>
+                </div>
+            <% } %>
+            
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
@@ -35,7 +49,8 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     <%= __('use') %>
                     <a href="<%= __('cc_by_url') %>" rel="external nofollow noreferrer" target="_blank"><%= __('cc_by_name') %></a>
                     <%= __('licensed') %>
-                    <a href="<%- url_for('/about') %>" target="_blank"><%- page.author || config.author %></a>
+                    <a href="https://github.com/ALightGroup">ALG</a>
+                    <!-- <a href="<%- url_for('/about') %>" target="_blank"><%- page.author || config.author %></a> -->
                     !
                 </span>
             </div>
@@ -47,9 +62,22 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.author || config.author %></a>
+                    <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.author %></a>
                 </span>
             </div>
+            
+            <% if (page.revision) { %>
+                <div class="reprint__author">
+                    <span class="reprint-meta" style="font-weight: bold;">
+                        <i class="fa-solid fa-user-group">
+                            <%= __('审校') %>:
+                        </i>
+                    </span>
+                    <span class="reprint-info">
+                        <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.revision %></a>
+                    </span>
+                </div>
+            <% } %>
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
@@ -70,7 +98,8 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     <%= __('use') %>
                     <a href="<%= __('cc_by_nd_url') %>" rel="external nofollow noreferrer" target="_blank"><%= __('cc_by_nd_name') %></a>
                     <%= __('licensed') %>
-                    <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a>
+                    <a href="https://github.com/ALightGroup">ALG</a>
+                    <!-- <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a> -->
                     !
                 </span>
             </div>
@@ -82,9 +111,22 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="<%- config.url %>" rel="external nofollow noreferrer"><%- page.author || config.author %></a>
-                    </span>
+                    <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.author %></a>
+                </span>
             </div>
+            
+            <% if (page.revision) { %>
+                <div class="reprint__author">
+                    <span class="reprint-meta" style="font-weight: bold;">
+                        <i class="fa-solid fa-user-group">
+                            <%= __('审校') %>:
+                        </i>
+                    </span>
+                    <span class="reprint-info">
+                        <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.revision %></a>
+                    </span>
+                </div>
+            <% } %>
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
@@ -105,7 +147,8 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     <%= __('use') %>
                     <a href="<%= __('cc_by_sa_url') %>" rel="external nofollow noreferrer" target="_blank"><%= __('cc_by_sa_name') %></a>
                     <%= __('licensed') %>
-                    <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a>
+                    <a href="https://github.com/ALightGroup">ALG</a>
+                    <!-- <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a> -->
                     !
                 </span>
             </div>
@@ -117,9 +160,22 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="<%- config.url %>" rel="external nofollow noreferrer"><%- page.author || config.author %></a>
+                    <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.author %></a>
                 </span>
             </div>
+            
+            <% if (page.revision) { %>
+                <div class="reprint__author">
+                    <span class="reprint-meta" style="font-weight: bold;">
+                        <i class="fa-solid fa-user-group">
+                            <%= __('审校') %>:
+                        </i>
+                    </span>
+                    <span class="reprint-info">
+                        <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.revision %></a>
+                    </span>
+                </div>
+            <% } %>
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
@@ -140,7 +196,8 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     <%= __('use') %>
                     <a href="<%= __('cc_by_nc_url') %>" rel="external nofollow noreferrer" target="_blank"><%= __('cc_by_nc_name') %></a>
                     <%= __('licensed') %>
-                    <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a>
+                    <a href="https://github.com/ALightGroup">ALG</a>
+                    <!-- <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a> -->
                     !
                 </span>
             </div>
@@ -152,9 +209,22 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="<%- config.url %>" rel="external nofollow noreferrer"><%- page.author || config.author %></a>
+                    <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.author %></a>
                 </span>
             </div>
+            
+            <% if (page.revision) { %>
+                <div class="reprint__author">
+                    <span class="reprint-meta" style="font-weight: bold;">
+                        <i class="fa-solid fa-user-group">
+                            <%= __('审校') %>:
+                        </i>
+                    </span>
+                    <span class="reprint-info">
+                        <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.revision %></a>
+                    </span>
+                </div>
+            <% } %>
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
@@ -175,7 +245,8 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     <%= __('use') %>
                     <a href="<%= __('cc_by_nc_nd_url') %>" rel="external nofollow noreferrer" target="_blank"><%= __('cc_by_nc_nd_name') %></a>
                     <%= __('licensed') %>
-                    <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a>
+                    <a href="https://github.com/ALightGroup">ALG</a>
+                    <!-- <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a> -->
                     !
                 </span>
             </div>
@@ -187,9 +258,22 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="<%- config.url %>" rel="external nofollow noreferrer"><%- page.author || config.author %></a>
+                    <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.author %></a>
                 </span>
             </div>
+            
+            <% if (page.revision) { %>
+                <div class="reprint__author">
+                    <span class="reprint-meta" style="font-weight: bold;">
+                        <i class="fa-solid fa-user-group">
+                            <%= __('审校') %>:
+                        </i>
+                    </span>
+                    <span class="reprint-info">
+                        <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.revision %></a>
+                    </span>
+                </div>
+            <% } %>
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
@@ -210,7 +294,8 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
                     <%= __('use') %>
                     <a href="<%= __('cc_by_nc_sa_url') %>" rel="external nofollow noreferrer" target="_blank"><%= __('cc_by_nc_sa_name') %></a>
                     <%= __('licensed') %>
-                    <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a>
+                    <a href="https://github.com/ALightGroup">ALG</a>
+                    <!-- <a href="<%- config.url %>" target="_blank"><%- page.author || config.author %></a> -->
                     !
                 </span>
             </div>
